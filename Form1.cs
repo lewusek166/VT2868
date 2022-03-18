@@ -43,13 +43,26 @@ namespace VT2868
                 {
                     if(tab[q, 2] != null && tab[q, 2] != "")
                     {
-                        label3.Text = "Zastanów się czy chcesz zdjęcie poglądowe czy film może być tylko jedno pozycja:" + (q + 1).ToString();
+                        label3.Text = "Zastanów się czy chcesz zdjęcie poglądowe czy film może być tylko jedno. Pozycja:" + (q + 1).ToString();
                         break;
                     }
                 }
                     
             }
-            
+            ///nie przypisane wartości konieczne 
+            for (int q = 0; ileOperacji >= q; q++)
+            {
+                if (tab[q, 0] != null && tab[q, 0] != "")
+                {
+                    if (tab[q, 2] != null && tab[q, 2] != "")
+                    {
+                        label3.Text = "Zastanów się czy chcesz zdjęcie poglądowe czy film może być tylko jedno. Pozycja:" + (q + 1).ToString();
+                        break;
+                    }
+                }
+
+            }
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
